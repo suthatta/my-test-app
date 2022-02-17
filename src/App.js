@@ -7,20 +7,20 @@ import Contact from './pages/Contact';
 function App() {
   return (
     
-<BrowserRouter>
+<div>
 <Navbar></Navbar>
   <Routes>
     <Route>
      <About path="/about">element={About}</About>
     </Route>
     <Route>
-     <About path="/projects">element={Projects}</About>
+     <Projects path="/projects">element={Projects}</Projects>
     </Route>
     <Route>
-     <About path="/contact">element={Contact}</About>
+     <Contact path="/contact">element={Contact}</Contact>
     </Route>
   </Routes>
-</BrowserRouter>
+</div>
   );
 }
 
